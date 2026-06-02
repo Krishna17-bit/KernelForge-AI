@@ -2,7 +2,7 @@
 
 **KernelForge AI** is a local GPU and inference optimization workbench for CUDA-aware benchmarking, Triton kernel experimentation, PyTorch baseline comparison, autotuning, model-serving export, and forward-deployed engineering style performance reports.
 
-It is designed to show advanced AI systems capability beyond normal RAG/chatbot apps: GPU systems thinking, performance benchmarking, correctness testing, Triton kernel awareness, inference serving, profiling, and deployment recommendations.
+It is designed to test advanced AI systems capability beyond normal RAG/chatbot apps: GPU systems thinking, performance benchmarking, correctness testing, Triton kernel awareness, inference serving, profiling, and deployment recommendations.
 
 The app runs safely on normal CPU laptops and unlocks GPU/Triton paths automatically when PyTorch, CUDA, and Triton are available.
 
@@ -144,11 +144,7 @@ Generates a markdown report with:
 - deployment recommendation
 - next optimization steps
 
-Optional AI narrative mode can create a senior ML systems engineer summary when `.env` is configured.
-
-### Client Recommendation
-
-Produces a forward-deployed engineering style recommendation:
+### Recommendation
 
 - whether the workload is GPU-worthy
 - whether PyTorch, Triton kernels, or serving optimization is the next step
@@ -237,8 +233,7 @@ Open `.env` and add:
 GEMINI_API_KEY=your_key_here
 GEMINI_MODEL=gemini-2.5-pro
 ```
-
-The UI does not display provider/model names. Benchmarks and exports work even without an API key.
+Benchmarks and exports work even without an API key.
 
 ---
 
@@ -254,34 +249,6 @@ The UI does not display provider/model names. Benchmarks and exports work even w
 8. Open **Model Serving Export** and download the serving template ZIP.
 9. Open **Profiler Report** and download the performance report.
 
----
-
-## GitHub Safety
-
-Before pushing, verify `.env` is ignored:
-
-```bash
-git check-ignore -v .env
-git ls-files .env
-```
-
-`git ls-files .env` should print nothing.
-
----
-
-## Repository Description
-
-GPU and inference optimization workbench for Triton kernels, CUDA-aware benchmarking, PyTorch baselines, autotuning, profiling, model serving export, and deployment-ready performance reports.
-
----
-
-## Suggested Repo Name
-
-```text
-KernelForge-AI-GPU-Inference-Optimization-Workbench
-```
-
----
 
 ## Disclaimer
 
